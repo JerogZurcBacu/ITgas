@@ -87,6 +87,76 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*Pre-styles*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.noventa  {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+   /*Start Header*/
+
+#banner {
+  width: 100%;
+  background-color: #183F51;
+  color: white;
+  height: 41px;
+  font-size: 14px;
+}
+#banner .noventa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#banner p {
+  width: 35%;
+  margin: auto 0;
+}
+#banner ul {
+  width: 40%;
+  margin: auto 0;
+}
+#redes_horizontal li {
+  display: inline;
+  margin: 0 10px;
+}
+
+   /*End header*/
+
+   /*Start About*/
+
+
+
+   /*End About*/
+
+   /*Start trabajos*/
+
+
+
+   /*End trabajos*/
+
+   /*Start blog*/
+
+
+
+   /*End blog*/
+
+   /*Start redes*/
+
+
+
+   /*End redes*/
+
+   /*Start footer*/
+
+
+
+   /*End footer*/
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +330,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
