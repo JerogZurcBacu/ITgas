@@ -273,34 +273,174 @@ a {
 
    /*End header*/
 
+   /*Star Video*/
+
+#video_container {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+}
+#video_container iframe {
+  margin: auto;
+}
+
+   /*End Video*/
+
    /*Start About*/
 
-
+#contenedor_tarjetas {
+  height: 450px;
+  display: flex;
+}
+.tarjeta {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  height: 300px;
+  margin: auto;
+  width: 25%;
+  padding: 20px;
+  transition: background-color .2s;
+}
+.tarjeta:hover {
+  background-color: #183F51;
+  color: white;
+}
 
    /*End About*/
 
-   /*Start trabajos*/
+   /*Start SERVICIOS*/
 
+.servicio {
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+}
+.contenido_img_servicios {
+  width: 30%;
+  max-height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+.contenido_img_servicios img {
+  height: 100%;
+  margin: 0 auto;
+}
+#foto2 {
+  height: 75%;
+}
+.contenido_texto_servicios {
+  width: 50%;
+  padding-top: 20px;
+}
+.contenido_texto_servicios h2 {
+  font-size: 40px;
+}
+.contenido_texto_servicios P {
+  font-size: 16px;
+}
+.espacio {
+  height: 100px;
+}
+.decoration1 {
+  background-color: #183F51;
+  height: 2px;
+  width: 200px;
+}
+.decoration2 {
+  background-color: grey;
+  height: 1px;
+}
+   /*End servicios*/
 
+   /*Start numeros*/
 
-   /*End trabajos*/
+#numeros {
+  display: flex;
+  justify-content:flex-start;
+  padding: 30px;
+  background-image: url("../img/Fondo_1.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 150px;
+}
+.numero_numeros {
+  margin: 0 10px 0 30px;
+}
+.texto_numeros {
+  margin: 0 200px 0 10px;
+}
+.numero_numeros p {
+  font-size: 20px;
+  color: white;
+}
+.texto_numeros p {
+  font-size: 16px;
+  color: white;
+}
 
-   /*Start blog*/
+   /*End numeros*/
 
+   /*Start tienda*/
 
+#titulo_tienda {
+  width: 80%;
+  padding: 0 20px 0 80px;
+}
+.tienda {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  align-items: center;
+}
+.producto {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.img_producto {
+  width: 100%;
+}
+.img_producto img {
+  width: 100%;
+}
 
-   /*End blog*/
+   /*End tienda*/
 
-   /*Start redes*/
+   /*Start Redes*/
 
+#redes {
+  padding: 0 80px;
+  margin: 130px 0;
+}
+#redes_sociales {
+  display: flex;
+  justify-content: space-around;
+}
+.red {
+  font-size: 160px;
+}
+.red:hover {
+  color: #183F51;
+}
 
-
-   /*End redes*/
+   /*End Redes/*
 
    /*Start footer*/
 
-
-
+footer {
+  background-color: #183F51;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+.columna_footer {
+  width: 20%;
+  color: white;
+}
    /*End footer*/
 
 
