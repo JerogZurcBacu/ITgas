@@ -98,7 +98,8 @@ body {
   height: 100%;
 }
 button {
-    background-color: #194052; /* Green */
+    background-color: #194052;
+    background-color: #98c717;
     border-radius: 40px;
     color: white;
     padding: 15px 32px;
@@ -114,7 +115,7 @@ a {
 
 #banner {
   width: 100%;
-  background-color: #183F51;
+  background-color: #194052;
   color: white;
   height: 41px;
   font-size: 14px;
@@ -229,8 +230,13 @@ a {
   box-shadow: 2px 2px 5px #999; /*cambiar intensidad de sombra*/
 }
 #main  {
-  background: rgb(152,199,23);
-  background: linear-gradient(148deg, rgba(152,199,23,1) 6%, rgba(0,130,112,1) 100%);
+  /*background: rgb(152,199,23);
+  background: linear-gradient(148deg, rgba(152,199,23,1) 6%, rgba(0,130,112,1) 100%);*/
+  background-color: #194052;
+  background-image: url("../img/Fondo_triangulos1.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 600px;
   margin-top: -30px;
 }
@@ -277,12 +283,14 @@ a {
    /*Star Video*/
 
 #video_container {
-  height: 650px;
+  height: 500px;
   display: flex;
   justify-content: center;
+
 }
 #video_container iframe {
-  margin: auto;
+  margin: 50px auto;
+  box-shadow: 10px 10px 10px #999;
 }
 
    /*End Video*/
@@ -301,6 +309,7 @@ a {
   width: 25%;
   padding: 20px;
   transition: background-color .2s;
+  box-shadow: 10px 10px 10px #999;
 }
 .tarjeta:hover {
   background-color: #183F51;
@@ -308,6 +317,15 @@ a {
 }
 
    /*End About*/
+
+/* Separador */
+
+.separador  {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Separador */
 
    /*Start SERVICIOS*/
 
@@ -320,15 +338,15 @@ a {
   width: 30%;
   max-height: 500px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 .contenido_img_servicios img {
-  height: 100%;
-  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+  box-shadow: 10px 10px 10px #999;
 }
-#foto2 {
-  height: 75%;
-}
+
 .contenido_texto_servicios {
   width: 50%;
   padding-top: 20px;
@@ -340,10 +358,10 @@ a {
   font-size: 16px;
 }
 .espacio {
-  height: 100px;
+  height: 50px;
 }
 .decoration1 {
-  background-color: #183F51;
+  background-color: #98c717;
   height: 2px;
   width: 200px;
 }
@@ -366,17 +384,18 @@ a {
   background-size: cover;
   align-items: center;
   height: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 }
 .numero_numeros {
   margin: 0 10px 0 30px;
 }
 .texto_numeros {
-  margin: 0 200px 0 10px;
+  margin: 0 100px 0 10px;
 }
 .numero_numeros p {
-  font-size: 20px;
-  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  color: #98c717;
 }
 .texto_numeros p {
   font-size: 16px;
@@ -415,17 +434,27 @@ a {
 
 #redes {
   padding: 0 80px;
-  margin: 130px 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#redes h2{
+  font-size: 40px;
+}
+#redes a {
+  color: #98c717;
 }
 #redes_sociales {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .red {
-  font-size: 160px;
+  font-size: 50px;
+  margin: 0 20px;
 }
-.red:hover {
-  color: #183F51;
+.red i:hover {
+  color: #194052;
 }
 
    /*End Redes/*
@@ -436,7 +465,7 @@ footer {
   background-color: #183F51;
   display: flex;
   justify-content: space-around;
-  padding: 0 50px;
+  padding: 0 50px 20px 0;
 }
 .columna_footer {
   width: 20%;
