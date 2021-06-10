@@ -240,6 +240,26 @@ a {
   height: 600px;
   margin-top: -30px;
 }
+#main_b2b  {
+  /*background: rgb(152,199,23);
+  background: linear-gradient(148deg, rgba(152,199,23,1) 6%, rgba(0,130,112,1) 100%);*/
+  background-color: #194052;
+  background-image: url("../img/main_fondo_b2b.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -30px;
+}
+#main_software {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_softwre.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -30px;
+}
 #capsula_main {
     display: flex;
     justify-content: space-around;
@@ -292,7 +312,15 @@ a {
   margin: 50px auto;
   box-shadow: 10px 10px 10px #999;
 }
+.caja_software {
+  display: flex;
 
+}
+.color_pos {
+  background-color: blue;
+  width: 40%;
+  height: 500px;
+}
    /*End Video*/
 
    /*Start About*/
@@ -334,6 +362,10 @@ a {
   display: flex;
   justify-content: space-around;
 }
+.servicio_b2b {
+  display: flex;
+  justify-content: space-around;
+}
 .contenido_img_servicios {
   width: 30%;
   max-height: 500px;
@@ -346,7 +378,68 @@ a {
   height: 50%;
   box-shadow: 10px 10px 10px #999;
 }
-
+.contenido_img_servicios_b2b {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenido_img_servicios_b2b img {
+  width: 100%;
+}
+#mision {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 20px 80px;
+}
+#blanc {
+  width: 45%;
+}
+#texto_b2b {
+  width: 55%;
+}
+.sep_vert {
+  width: 10px;
+  height: 80px;
+  background-color: #98c717;
+  margin: 0 10px;
+}
+.caja_texto_b2b {
+  display: flex;
+  justify-content: space-between;
+}
+.caja_texto_b2b cite {
+  padding-right: 10px;
+}
+.bulets {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+.fil_bul {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.caja_bul {
+  margin: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.circulo_ico {
+  width: 50%;
+}
+.circulo_ico img {
+  width: 80%;
+}
+.texto_bul p {
+  display: flex;
+  align-items: center;
+}
 .contenido_texto_servicios {
   width: 50%;
   padding-top: 20px;
