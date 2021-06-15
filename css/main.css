@@ -312,15 +312,66 @@ a {
   margin: 50px auto;
   box-shadow: 10px 10px 10px #999;
 }
+
+/*Software*/
+
 .caja_software {
   display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 20px 40px;
+}
+.cont_botones_soft {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.boton_soft {
+  background-color: #D9D9D9;
+  width: 175px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  transition: 0.3s;
+}
+.boton_soft a {
+  color: black;
+}
+.boton_soft:hover {
+  background-color: #98c717;
+}
+.img_soft {
+  width: 60%;
+}
+.img_soft img {
+  width: 100%;
+  border: solid 5px #194052;
+}
+#buno {
+  background-color: #98c717;
+  font-weight: bold;
+}
+.seccion_soft {
+  display: flex;
+  justify-content: space-between;
+}
+.soft_img {
+  width: 35%;
+}
+.soft_text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.soft_img img {
+  width: 100%;
+}
+/*Software*/
 
-}
-.color_pos {
-  background-color: blue;
-  width: 40%;
-  height: 500px;
-}
    /*End Video*/
 
    /*Start About*/
@@ -562,6 +613,9 @@ footer {
 }
 .columna_footer {
   width: 20%;
+  color: white;
+}
+.columna_footer a {
   color: white;
 }
    /*End footer*/
