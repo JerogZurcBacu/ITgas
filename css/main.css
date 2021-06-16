@@ -314,7 +314,9 @@ a {
 }
 
 /*Software*/
-
+.h2_soft {
+  font-size: 40px;
+}
 .caja_software {
   display: flex;
   justify-content: space-around;
@@ -356,7 +358,7 @@ a {
 }
 .seccion_soft {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .soft_img {
   width: 35%;
@@ -369,6 +371,19 @@ a {
 }
 .soft_img img {
   width: 100%;
+}
+#left_h2 {
+  text-align: right;
+  margin-left: 30px;
+}
+.egas_box {
+  display: flex;
+  justify-content: flex-end;
+  height: 150px;
+  overflow: visible;
+}
+.egas_box img {
+  width: 13%;
 }
 /*Software*/
 

@@ -1,3 +1,47 @@
 .seccion {
   padding: 0 60px;
 }
+#modulo_egas {
+  width: 100%;
+  padding: 10px 0;
+}
+#treintaporc {
+  width: 30%;
+}
+#cincuentaporc {
+  width: 50%;
+}
+#uno {
+  display: flex;
+  justify-content: space-around;
+}
+.centrado_texto {
+  display: flex;
+  align-items: center;
+}
+.centrado_texto p {
+  width: 90%;
+}
+li {
+  margin-top: 10px;
+}
+#paloma {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+}
+#paloma li::before {
+  content: "\7e";
+  padding-right: 8px;
+  color: #98c717;
+}
+#flecha {
+  list-style: none;
+  padding: 0;
+  margin-left: 50px;
+}
+#flecha li::before {
+  content: "\3e";
+  padding-right: 8px;
+  color: #194052;
+}
