@@ -88,9 +88,12 @@ textarea {
    ========================================================================== */
 
    /*Pre-styles*/
-
+p {
+  text-align: justify;
+}
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow: none;
 }
 .noventa  {
   width: 90%;
@@ -238,7 +241,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   height: 600px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 #main_b2b  {
   /*background: rgb(152,199,23);
@@ -249,7 +252,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 #main_software {
   background-color: #194052;
@@ -258,7 +261,34 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  margin-top: -30px;
+  margin-top: -20px;
+}
+#main_hardware {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_hardware.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -20px;
+}
+#main_oandg {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_oilandgas.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -20px;
+}
+#main_aliados {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_asociados.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -20px;
 }
 #capsula_main {
     display: flex;
@@ -269,8 +299,8 @@ a {
   flex-direction: column;
   justify-content: center;
   color: white;
-  width: 75%;
-  padding: 0  50px 0 0;
+  width: 50%;
+  padding: 0  20px 0 0;
 }
 #contenido_texto_main h1 {
   font-size: 50px;
@@ -289,16 +319,24 @@ a {
   margin: 0 30px;
 }
 #contenido_img_main {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 50px;
 }
 #contenido_img_main img {
-  width: 100%;
+  width: 95%;
 }
 
    /*End header*/
+
+   /*Star aliados*/
+
+
+
+   /*End aliados*/
+
 
    /*Star Video*/
 
@@ -356,6 +394,16 @@ a {
   background-color: #98c717;
   font-weight: bold;
 }
+.seccion {
+  display: flex;
+  flex-direction: column;
+}
+#uno_hard {
+  margin-top: 30px;
+}
+#hard_sect {
+  margin-top: 30px;
+}
 .seccion_soft {
   display: flex;
   justify-content: space-around;
@@ -387,7 +435,74 @@ a {
 }
 /*Software*/
 
-   /*End Video*/
+/*Start hardware*/
+
+.muestratio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.caja_muestrario {
+  width: 25%;
+  background-color: white;
+  border-radius: 4px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  transition: background-color .2s;
+  box-shadow: 10px 10px 10px #999;
+  margin-top: 20px;
+}
+.caja_muestrario_largo {
+  width: 25%;
+  background-color: white;
+  border-radius: 4px;
+  height: 700px;
+  margin: auto;
+  padding: 20px;
+  transition: background-color .2s;
+  box-shadow: 10px 10px 10px #999;
+  margin-top: 20px;
+}
+.caja_muestrario:hover {
+  border: solid 2px #183F51;
+}
+.caja_muestrario_largo:hover {
+  border: solid 2px #183F51;
+}
+.img_muestrario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img_muestrario img {
+  max-height: 180px;
+}
+
+
+/*End hardware*/
+
+/*Star OandG*/
+
+#oang_uno {
+  width: 90%;
+  margin: auto;
+}
+#oang_uno h2 {
+  font-size: 30px;
+  color: #98c717;
+}
+.background {
+  background-color: #194052;
+  background-image: url("../img/bg_oandg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*End OandG*/
 
    /*Start About*/
 
