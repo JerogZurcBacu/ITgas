@@ -333,6 +333,53 @@ a {
 
    /*Star aliados*/
 
+.aliados_bg {
+  background-color: #a6bdc7;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #a6bdc7 6px ), repeating-linear-gradient( #a5b37f55, #a5b37f );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contenedor_aliados {
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.contenedor_aliados div {
+  width: 30%;
+}
+.contenedor_aliados div img{
+  width: 100%;
+  /*filter: grayscale();*/
+}
+.contenedor_aliados div img:hover {
+  filter: none;
+}
+#egas {
+  width: 50%;
+  margin: 0 250px;
+  height: 300px;
+}
+#panasonic {
+  width: 40%;
+  height: 256px;
+}
+#lenovo {
+  width: 40%;
+  height: 256px;
+}
+#petro {
+  width: 40%;
+  height: 200px;
+}
+#emen {
+  width: 40%;
+  height: 200px;
+}
 
 
    /*End aliados*/
