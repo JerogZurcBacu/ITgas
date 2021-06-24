@@ -256,7 +256,7 @@ a {
 }
 #main_software {
   background-color: #194052;
-  background-image: url("../img/main_fondo_softwre.png");
+  background-image: url("../img/main_fondo_software.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -284,6 +284,15 @@ a {
 #main_aliados {
   background-color: #194052;
   background-image: url("../img/main_fondo_asociados.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -20px;
+}
+#main_contacto {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_contacto.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,6 +393,30 @@ a {
 
    /*End aliados*/
 
+/* Start contacto*/
+
+.contenedor_contacto {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.contacto_izq {
+  width: 70%;
+  margin: 10px 30px;
+}
+.contacto_der {
+  width: 30%;
+  margin: 10px 30px;
+}
+#mapa {
+  width: 100%;
+}
+#contacto_rrss {
+  font-size: 80px;
+}
+
+/*End contacto*/
 
    /*Star Video*/
 
@@ -760,8 +793,21 @@ a {
   flex-direction: column;
   align-items: center;
 }
+#redes_cont {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#redes_cont a {
+  color: #98c717;
+}
 #redes h2{
   font-size: 40px;
+}
+#contacto_rrss {
+  font-size: 25px;
+  font-weight: bold;
 }
 #redes a {
   color: #98c717;
