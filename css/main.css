@@ -565,24 +565,9 @@ a {
 
 /*End hardware*/
 
-/*Star OandG*/
-
-#oang_uno {
-  width: 90%;
-  margin: auto;
+iframe {
+  border: none;
 }
-#oang_uno h2 {
-  font-size: 30px;
-  color: #98c717;
-}
-.background {
-  background-color: #194052;
-  background-image: url("../img/bg_oandg.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*End OandG*/
 
    /*Start About*/
 
