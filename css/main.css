@@ -103,6 +103,7 @@ body {
 button {
     background-color: #194052;
     background-color: #98c717;
+    border: solid 1px gray;
     border-radius: 40px;
     color: white;
     padding: 15px 32px;
@@ -110,6 +111,9 @@ button {
     text-decoration: none;
     font-size: 16px;
     display: inline-block;
+}
+button:hover {
+  transform: scale(1.05);
 }
 a {
   text-decoration: none;
@@ -186,6 +190,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#texto_contacto a {
+  color: black;
 }
 .icon_contacto {
   margin-right: 10px;
@@ -284,6 +291,15 @@ a {
 #main_aliados {
   background-color: #194052;
   background-image: url("../img/main_fondo_asociados.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-top: -20px;
+}
+#main_otrosservicios {
+  background-color: #194052;
+  background-image: url("../img/main_fondo_servicios.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
