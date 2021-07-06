@@ -567,6 +567,7 @@ a {
 
 iframe {
   border: none;
+  margin-bottom: 50px;
 }
 
    /*Start About*/
@@ -811,6 +812,67 @@ iframe {
 
    /*End Redes/*
 
+   /*otros servicios*/
+
+.display_os {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+.caja_os {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+.img_os {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_os img {
+  width: 100%;
+  margin: auto;
+}
+.texto_os {
+  width: 50%;
+  font-size: 12px;
+}
+.caja_os_largo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.img_os_largo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_os_largo img {
+  width: 80%;
+  margin: auto 20px;
+}
+.texto_os_largo {
+  width: 50%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.texto_os_largo h3 {
+  text-align: center;
+}
+#extra {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+   /*otros servicios*/
+
    /*Start footer*/
 
 footer {
@@ -827,7 +889,17 @@ footer {
   color: white;
 }
    /*End footer*/
-
+#pie_pagina {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-color: #183f51;
+  margin: 0;
+  height: 50px;
+}
+#pie_pagina a {
+  color: white;
+}
 
 /* ==========================================================================
    Helper classes

@@ -97,7 +97,7 @@
 <div class="decoration2"></div>
 <p>En ITGAS B2B, contamos con la experiencia en la industria petrolera satisfaciendo a los clientes más exigentes y destacados de México y Latinoamérica, cumpliendo con las expectativas, calidad, funcionalidad y las necesidades de todos nuestros socios de negocio en tiempo y forma.</p>
 </div>
-<iframe src="oandg/ingenieriata.html" width="100%" height="5000px"></iframe>
+<iframe src="oandg/ingenieriata.html" width="100%" id="myIframe"></iframe>
 <footer>
   <div class="columna_footer">
     <div class="espacio"></div>
@@ -176,6 +176,15 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("myIframe");
+
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script>
 </body>
 
 </html>
