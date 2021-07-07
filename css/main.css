@@ -854,6 +854,13 @@ iframe {
 .texto_os {
   width: 50%;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#texto_especial {
+  width: 25%;
+  font-size: 18px;
 }
 .caja_os_largo {
   width: 100%;

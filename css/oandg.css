@@ -75,16 +75,56 @@
   margin-bottom: 20px;
 }
 #mediciones img {
-  width: 100%;
+  width: 90%;
 }
 .mediciones_logo {
   width: 30%;
   margin: 10px 0;
 }
-#mediciones img {
-  width: 100%;
+.cajon_img_med {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cajon_img_med img {
+  margin-bottom: -50px;
 }
 
-
-
 /*ingenieriata*/
+/*juridico*/
+
+.juridico_caja_grande {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.img_juridico {
+  width: 40%;
+}
+.img_juridico img {
+  width: 90%;
+  margin-left: 20px;
+}
+.texto_juridico {
+  display: flex;
+  align-items: center;
+}
+
+/*juridico*/
+/*boton estatico*/
+
+#estatico {
+  width: 100%;
+  height: 50px;
+}
+.img_estatico {
+  width: 5%;
+  float: right;
+}
+.img_estatico img {
+  width: 100%;
+  margin: auto 0;
+}
+
+/*boton estatico*/
