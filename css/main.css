@@ -127,10 +127,20 @@ a {
   height: 41px;
   font-size: 14px;
 }
+@media only screen and (max-width: 500px) {
+  #banner p {
+    display: none;
+  }
+}
 #banner .noventa {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media only screen and (max-width: 500px) {
+  #banner .noventa {
+    justify-content: center;
+  }
 }
 #banner p {
   width: 35%;
@@ -145,6 +155,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
 }
+
 #redes_horizontal li {
   display: inline-block;
   margin: 0 10px;
@@ -210,6 +221,11 @@ a {
   justify-content: center;
   margin-left: 30px;
 }
+@media only screen and (max-width: 500px) {
+  #logo_contacto {
+    display: none;
+  }
+}
 #capsula_nav {
     display: flex;
     flex-direction: row;
@@ -239,6 +255,76 @@ a {
 #nav_header {
   box-shadow: 2px 2px 5px #999; /*cambiar intensidad de sombra*/
 }
+nav {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  #nav_header {
+    display: none;
+  }
+  #nav_header ul {
+    display: none;
+  }
+  #capsula_nav {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+/*hamburguesa comienzo*/
+#menu_horizontal {
+  display: none;
+}
+
+nav ul{
+  display: none;
+}
+input:checked  ~ ul{
+  display:block;
+}
+input {
+  display: none;
+}
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+#barras {
+  width: 30px;
+}
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+}
+nav ul{
+  margin-top:0;
+  padding: 0;
+  width: 150px;
+}
+nav li {
+  display: block;
+  /*background: lightgrey;*/
+  color: white;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
+}
+nav a {
+  color: white;
+}
+}
+/*hamburguesa comienzo*/
+
+
 #main  {
   /*background: rgb(152,199,23);
   background: linear-gradient(148deg, rgba(152,199,23,1) 6%, rgba(0,130,112,1) 100%);*/
@@ -249,6 +335,13 @@ a {
   background-size: contain;
   height: 600px;
   margin-top: -20px;
+}
+@media only screen and (max-width: 500px) {
+  #main  {
+    background-color: #194052;
+    background-image: none;
+    margin-top: 0;
+  }
 }
 #main_b2b  {
   /*background: rgb(152,199,23);
@@ -261,6 +354,11 @@ a {
   height: 400px;
   margin-top: -20px;
 }
+@media only screen and (max-width: 500px) {
+  #main_b2b  {
+    margin-top: 0;
+  }
+}
 #main_software {
   background-color: #194052;
   background-image: url("../img/main_fondo_software.png");
@@ -269,6 +367,11 @@ a {
   background-size: cover;
   height: 400px;
   margin-top: -20px;
+}
+@media only screen and (max-width: 500px) {
+  #main_software  {
+    margin-top: 0;
+  }
 }
 #main_hardware {
   background-color: #194052;
@@ -279,6 +382,11 @@ a {
   height: 400px;
   margin-top: -20px;
 }
+@media only screen and (max-width: 500px) {
+  #main_hardware  {
+    margin-top: 0;
+  }
+}
 #main_oandg {
   background-color: #194052;
   background-image: url("../img/main_fondo_oilandgas.png");
@@ -287,6 +395,11 @@ a {
   background-size: cover;
   height: 400px;
   margin-top: -20px;
+}
+@media only screen and (max-width: 500px) {
+  #main_oandg  {
+    margin-top: 0;
+  }
 }
 #main_aliados {
   background-color: #194052;
@@ -297,6 +410,11 @@ a {
   height: 400px;
   margin-top: -20px;
 }
+@media only screen and (max-width: 500px) {
+  #main_aliados  {
+    margin-top: 0;
+  }
+}
 #main_otrosservicios {
   background-color: #194052;
   background-image: url("../img/main_fondo_servicios.png");
@@ -306,6 +424,11 @@ a {
   height: 400px;
   margin-top: -20px;
 }
+@media only screen and (max-width: 500px) {
+  #main_otrosservicios {
+    margin-top: 0;
+  }
+}
 #main_contacto {
   background-color: #194052;
   background-image: url("../img/main_fondo_contacto.png");
@@ -314,6 +437,11 @@ a {
   background-size: cover;
   height: 400px;
   margin-top: -20px;
+}
+@media only screen and (max-width: 500px) {
+  #main_contacto  {
+    margin-top: 0;
+  }
 }
 #capsula_main {
     display: flex;
@@ -329,11 +457,22 @@ a {
 }
 #contenido_texto_main h1 {
   font-size: 50px;
-  margin: 0 0 0 40px;;
+  margin: 0 0 0 40px;
 }
 #contenido_texto_main p {
   font-size: 20px;
-  margin: 0 0 0 40px;;
+  margin: 0 0 0 40px;
+}
+@media only screen and (max-width: 500px) {
+  #contenido_texto_main {
+    width: 90%;
+  }
+  #contenido_texto_main h1 {
+    margin: 0;
+  }
+  #contenido_texto_main p {
+    margin: 0;
+  }
 }
 #botones_main {
   margin: 30px 0 0 20px;
@@ -342,6 +481,15 @@ a {
 }
 #botones_main button {
   margin: 0 30px;
+}
+@media only screen and (max-width: 500px) {
+  #botones_main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #botones_main button {
+    margin: 10px 0;
+  }
 }
 #contenido_img_main {
   width: 30%;
@@ -353,7 +501,11 @@ a {
 #contenido_img_main img {
   width: 95%;
 }
-
+@media only screen and (max-width: 500px) {
+  #contenido_img_main {
+    display: none;
+  }
+}
    /*End header*/
 
    /*Star aliados*/
@@ -405,6 +557,29 @@ a {
   width: 40%;
   height: 200px;
 }
+@media only screen and (max-width: 500px) {
+  #egas {
+    width: 30%;
+    margin: 0 auto;
+    height: 87px;
+  }
+  #panasonic {
+    width: 30%;
+    height: 87px;
+  }
+  #lenovo {
+    width: 30%;
+    height: 87px;
+  }
+  #petro {
+    width: 30%;
+    height: 87px;
+  }
+  #emen {
+    width: 30%;
+    height: 87px;
+  }
+}
 
 
    /*End aliados*/
@@ -425,13 +600,31 @@ a {
   width: 30%;
   margin: 10px 30px;
 }
+@media only screen and (max-width: 500px) {
+  .contenedor_contacto {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacto_izq {
+    width: 90%;
+    margin: 0 10px;
+  }
+  .contacto_der {
+    width: 90%;
+    margin: 0 10px;
+  }
+}
 #mapa {
   width: 100%;
 }
 #contacto_rrss {
   font-size: 80px;
 }
-
+@media only screen and (max-width: 500px) {
+  #contacto_rrss {
+    font-size: 40px;
+  }
+}
 /*End contacto*/
 
    /*Star Video*/
@@ -445,6 +638,15 @@ a {
 #video_container iframe {
   margin: 50px auto;
   box-shadow: 10px 10px 10px #999;
+}
+@media only screen and (max-width: 500px) {
+  #video_container {
+    height: 300px;
+  }
+  #video_container iframe {
+      width: 300px;
+      height: 176px;
+    }
 }
 
 /*Software*/
@@ -592,6 +794,12 @@ iframe {
   height: 450px;
   display: flex;
 }
+@media only screen and (max-width: 500px) {
+  #contenedor_tarjetas {
+    height: 1000px;
+    flex-direction: column;
+  }
+}
 .tarjeta {
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -601,6 +809,13 @@ iframe {
   padding: 20px;
   transition: background-color .2s;
   box-shadow: 10px 10px 10px #999;
+}
+@media only screen and (max-width: 500px) {
+  .tarjeta {
+    height: 280px;
+    margin-left: 10px;
+    width: 80%;
+  }
 }
 .tarjeta:hover {
   background-color: #183F51;
@@ -625,6 +840,11 @@ iframe {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 500px) {
+  .servicio {
+    height: 700px;
+  }
+}
 .servicio_b2b {
   display: flex;
   justify-content: space-around;
@@ -641,11 +861,21 @@ iframe {
   height: 50%;
   box-shadow: 10px 10px 10px #999;
 }
+@media only screen and (max-width: 500px) {
+  .contenido_img_servicios {
+    display: none;
+  }
+}
 .contenido_img_servicios_b2b {
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .contenido_img_servicios_b2b {
+    display: none;
+  }
 }
 .contenido_img_servicios_b2b img {
   width: 100%;
@@ -680,6 +910,15 @@ iframe {
   justify-content: flex-start;
   margin: 20px 0;
 }
+@media only screen and (max-width: 500px) {
+  .bulets {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .fil_bul {
+    width: 100%;
+  }
+}
 .fil_bul {
   margin: 10px 0 0 0;
   display: flex;
@@ -692,6 +931,11 @@ iframe {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .caja_bul {
+    width: 25%;
+  }
 }
 .circulo_ico {
   width: 50%;
@@ -706,6 +950,15 @@ iframe {
 .contenido_texto_servicios {
   width: 50%;
   padding-top: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .contenido_texto_servicios {
+    width: 90%;
+    padding-top: 0;
+  }
+  .contenido_texto_servicios .espacio {
+    display: none;
+  }
 }
 .contenido_texto_servicios h2 {
   font-size: 40px;
@@ -741,6 +994,11 @@ iframe {
   align-items: center;
   height: 200px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  #numeros {
+    display: none;
+  }
 }
 .numero_numeros {
   margin: 0 10px 0 30px;
@@ -795,6 +1053,11 @@ iframe {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  #redes {
+    padding: 0 10px;
+  }
+}
 #redes_cont {
   margin-bottom: 50px;
   display: flex;
@@ -841,6 +1104,12 @@ iframe {
   display: flex;
   justify-content: space-around;
 }
+@media only screen and (max-width: 500px) {
+  .caja_os {
+    width: 90%;
+    flex-direction: column;
+  }
+}
 .img_os {
   width: 35%;
   display: flex;
@@ -858,6 +1127,14 @@ iframe {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .img_os {
+    width: 90%;
+  }
+  .texto_os {
+    width: 90%;
+  }
+}
 #texto_especial {
   width: 25%;
   font-size: 18px;
@@ -867,6 +1144,13 @@ iframe {
   display: flex;
   justify-content: center;
   margin: 30px 0;
+}
+@media only screen and (max-width: 500px) {
+  .caja_os_largo {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 .img_os_largo {
   width: 25%;
@@ -885,6 +1169,16 @@ iframe {
   flex-direction: column;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .img_os_largo {
+    width: 90%;
+    margin: auto;
+  }
+  .texto_os_largo {
+    width: 90%;
+    margin: auto;
+  }
+}
 .texto_os_largo h3 {
   text-align: center;
 }
@@ -892,6 +1186,14 @@ iframe {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  #extra {
+    width: 100%;
+  }
+  #extra img {
+    width: 100%;
+  }
 }
 
    /*otros servicios*/
@@ -911,7 +1213,33 @@ footer {
 .columna_footer a {
   color: white;
 }
+@media only screen and (max-width: 500px) {
+  #caja_twitter {
+    display: none;
+  }
+  .columna_footer {
+    width: 45%;
+    color: white;
+  }
+  .columna_footer p {
+    font-size: 12px;
+  }
+  .decoration1 {
+    display: none;
+  }
+  .decoration2 {
+    display: none;
+  }
+  #caja_facebook {
+    display: none;
+  }
+  #non_movil {
+    display: none;
+  }
+}
    /*End footer*/
+
+
 #pie_pagina {
   text-align: center;
   font-size: 12px;
