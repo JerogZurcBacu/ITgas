@@ -1182,10 +1182,29 @@ iframe {
 .texto_os_largo h3 {
   text-align: center;
 }
-#extra {
+#texto_extra {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+#caja_1extra {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subcaja_extra {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#caja_2extra {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 500px) {
   #extra {
