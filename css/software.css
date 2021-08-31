@@ -1,6 +1,9 @@
 .seccion {
   padding: 0 60px;
 }
+#cta_cotizar {
+    color: white;
+}
 #modulo_egas {
   width: 100%;
   padding: 10px 0;
